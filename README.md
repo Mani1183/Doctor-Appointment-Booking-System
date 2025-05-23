@@ -1,6 +1,6 @@
 # 🏥 Doctor Appointment Booking System
 
-A web-based application for hospitals and clinics to streamline doctor appointment scheduling. This system enables patients, doctors, and administrators to interact efficiently through a user-friendly interface.
+A web-based application designed to simplify and manage doctor appointments for hospitals and clinics. This system provides a seamless experience for patients, doctors, and administrators through an intuitive PHP and MySQL-powered interface.
 
 ## 🔧 Technology Stack
 
@@ -13,80 +13,73 @@ A web-based application for hospitals and clinics to streamline doctor appointme
 
 ### 👨‍⚕️ Patients
 - Register and log in
-- View available doctors and their schedules
+- View doctors and their available schedules
 - Book and cancel appointments
 
 ### 🩺 Doctors
-- Log in to manage availability
-- Accept/reject appointments
-- View patient appointments
+- Secure login and personalized dashboard
+- View and manage patient appointments
+- Update availability and schedules
 
-### 🛠️ Admin
-- Manage doctor and patient records
-- Oversee all appointments
-- Maintain the system data
+### 🛠️ Admins
+- Manage doctors and patient accounts
+- Monitor appointment data
+- Oversee the entire system
 
-## 💻 Installation & Setup (Local - XAMPP)
+## 💻 Installation & Setup (XAMPP)
 
-1. **Download and Install [XAMPP](https://www.apachefriends.org/index.html)**
-2. **Extract the project folder**
-   - Place the `dabs` folder inside `htdocs` (e.g., `C:\xampp\htdocs\dabs`)
-3. **Import the database**
+1. **Install [XAMPP](https://www.apachefriends.org/index.html)** and launch Apache & MySQL.
+2. **Extract the Project**  
+   Place the `dabs` folder into `C:\xampp\htdocs\` or your XAMPP `htdocs` directory.
+3. **Import the Database**
    - Open [phpMyAdmin](http://localhost/phpmyadmin)
-   - Create a new database (e.g., `dabs`)
-   - Import the `.sql` file located in the `database` folder of the project
-4. **Run the Application**
-   - Start Apache and MySQL from XAMPP Control Panel
-   - Open your browser and go to: [http://localhost/dabs](http://localhost/dabs)
-
-## 🧪 Usage Guide
-
-- **Patient Login**: Book appointments, view history
-- **Doctor Login**: Manage patient appointments
-- **Admin Login**: Access management dashboard
+   - Create a new database named `dabs`
+   - Import the SQL file: `dabs/database/dabs.sql`
+4. **Run the Application**  
+   Open a browser and visit: [http://localhost/dabs](http://localhost/dabs)
 
 ## 📁 Project Structure
-dabs/
-├── admin/              # Admin dashboard and management tools
-│   ├── dashboard.php       # Admin homepage
-│   ├── manage_doctors.php  # CRUD for doctor records
-│   └── manage_users.php    # Manage patient accounts
-│
-├── doctor/             # Doctor-side interface
-│   ├── dashboard.php       # Doctor homepage
-│   ├── appointments.php    # View and manage appointments
-│   └── schedule.php        # Update availability
-│
-├── patient/            # Patient-side interface
-│   ├── dashboard.php       # Patient homepage
-│   ├── book.php            # Book an appointment
-│   └── history.php         # View past appointments
-│
-├── includes/           # PHP config and utility files
-│   ├── db.php              # Database connection script
-│   └── auth.php            # Authentication helpers
-│
-├── css/                # Custom stylesheets
-│   └── style.css
-│
-├── js/                 # JavaScript files for UI interactions
-│   └── main.js
-│
-├── database/           # SQL dump for creating database schema
-│   └── dabs.sql
-│
-└── index.php           # Landing page and login redirection
 
+dabs/
+├── admin/ # Admin dashboard and management tools
+│ ├── dashboard.php
+│ ├── manage_doctors.php
+│ └── manage_users.php
+│
+├── doctor/ # Doctor interface
+│ ├── dashboard.php
+│ ├── appointments.php
+│ └── schedule.php
+│
+├── patient/ # Patient interface
+│ ├── dashboard.php
+│ ├── book.php
+│ └── history.php
+│
+├── includes/ # Config and utility PHP files
+│ ├── db.php
+│ └── auth.php
+│
+├── css/ # Custom stylesheets
+│ └── style.css
+│
+├── js/ # JavaScript files
+│ └── main.js
+│
+├── database/ # SQL dump
+│ └── dabs.sql
+│
+└── index.php # Entry point (login/homepage)
 
 ## 🙌 Contribution
 
-You're welcome to suggest improvements or add features. Fork the project, make changes, and open a pull request.
+Have suggestions or want to improve the system?  
+Fork the project, create a feature branch, commit your changes, and open a pull request!
 
 ## 📄 License
 
-This project is for academic/demo use.
+This project is provided for educational purposes only.
 
 ---
 
-### 💡 Developed by Manish Kumar
-
+### 💡 Developed by **Manish Kumar**

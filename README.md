@@ -47,14 +47,36 @@ A web-based application for hospitals and clinics to streamline doctor appointme
 
 ## 📁 Project Structure
 dabs/
-├── admin/ # Admin dashboard
-├── doctor/ # Doctor dashboard
-├── patient/ # Patient interfaces
-├── includes/ # PHP includes/configs
-├── css/ # Stylesheets
-├── js/ # JavaScript files
-├── database/ # SQL dump file
-└── index.php # Entry point
+├── admin/              # Admin dashboard and management tools
+│   ├── dashboard.php       # Admin homepage
+│   ├── manage_doctors.php  # CRUD for doctor records
+│   └── manage_users.php    # Manage patient accounts
+│
+├── doctor/             # Doctor-side interface
+│   ├── dashboard.php       # Doctor homepage
+│   ├── appointments.php    # View and manage appointments
+│   └── schedule.php        # Update availability
+│
+├── patient/            # Patient-side interface
+│   ├── dashboard.php       # Patient homepage
+│   ├── book.php            # Book an appointment
+│   └── history.php         # View past appointments
+│
+├── includes/           # PHP config and utility files
+│   ├── db.php              # Database connection script
+│   └── auth.php            # Authentication helpers
+│
+├── css/                # Custom stylesheets
+│   └── style.css
+│
+├── js/                 # JavaScript files for UI interactions
+│   └── main.js
+│
+├── database/           # SQL dump for creating database schema
+│   └── dabs.sql
+│
+└── index.php           # Landing page and login redirection
+
 
 ## 🙌 Contribution
 
